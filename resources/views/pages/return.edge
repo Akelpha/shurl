@@ -1,0 +1,48 @@
+@layout.app({ title: "SHURL--Un site web, deux atouts : lien raccourci + QR Code." })
+
+  <header>
+    <nav>
+      <a href="/" class="logo">SHURL</a>
+      <div class="nav-links">
+        <ul>
+          <li>
+            <a href="/">Accueil</a>
+          </li>
+          <li>
+            <a href="/about">À propos</a>
+          </li>
+        </ul>
+      </div>
+
+    </nav>
+  </header>
+
+  <main>
+    <div>
+      <h1>
+        Bienvenue chez URL Shorterner, où vos liens sont raccourcis! (Bonus : un QR code avec)
+      </h1>
+      <div class="div-section">
+        <section>
+          <label for="oldLink">Votre Lien Raccourcis</label>
+          <p class="url_shortener">
+            Short Url: <a id="shortUrl" target="_blank" href="{{ shortUrl }}" rel="noopener noreferrer">{{ shortUrl }}"</a>
+          </p>
+
+          <label for="qrCode">Votre QR Code </label>
+          <div class="qr_codeDiv">
+            <div id="qrCode">
+              <img src="{{ qrCodeUrl }}" alt="QR Code" />
+            </div>
+          </div>
+
+        </section>
+      </div>
+
+    </main>
+
+    @component('components/footer')
+    @endcomponent
+    
+    
+  @end

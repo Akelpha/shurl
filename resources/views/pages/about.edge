@@ -1,0 +1,56 @@
+@layout.app({ title: "SHURL--Un site web, deux atouts : lien raccourci + QR Code." })
+  <header>
+    <nav>
+      <a href="/" class="logo">SHURL</a>
+      <div class="nav-links">
+        <ul>
+          <!-- <li><a href="/return">Raccourcis</a></li> -->
+          {{-- TODO: Ajouter le lien vers la page "Raccourcis" --}}
+          <li>
+            <a href="/">Accueil</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div class="about-section">
+    <h1 class="about-title">
+      À propos de SHURL
+    </h1>
+    <p class="about-description">
+      SHURL est un outil simple et rapide pour raccourcir vos liens tout en générant un QR Code unique.
+    </p>
+
+    <div class="features">
+      <h2>
+        Fonctionnalités principales :
+      </h2>
+      <ul>
+        <li>
+          🔗 Raccourcissement de liens longs en un seul clic
+        </li>
+        <li>
+          📱 Génération automatique de QR Code pour chaque lien
+        </li>
+        <li>
+          🔒 Sécurité intégrée avec des tokens CSRF
+        </li>
+        <li>
+          🎨 Liens personnalisables (bientôt dispo)
+        </li>
+      </ul>
+    </div>
+
+    <div class="team">
+      <h2>
+        Notre objectif
+      </h2>
+      <p>
+        SHURL vise à simplifier le partage de contenu web, que ce soit pour les particuliers, les entreprises ou les développeurs.
+      Plus qu’un simple raccourcisseur d’URL, SHURL est un petit outil utile pour une grande efficacité.
+      </p>
+    </div>
+  </div>
+  @component('components/footer')
+  @endcomponent
+@end
